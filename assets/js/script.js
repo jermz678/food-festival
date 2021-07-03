@@ -94,12 +94,12 @@ $(document).ready(function() {
     })
   }
 
-  if (window.location.href.indexOf("event") > -1) {
-    const currentEvent = JSON.parse(localStorage.getItem("currentEvent")) || {
-        title: "Title Placeholder",
-        subtitle: "",
-        description: ""
-    };
+  // if (window.location.href.indexOf("event") > -1) {
+  //   const currentEvent = JSON.parse(localStorage.getItem("currentEvent")) || {
+  //       title: "Title Placeholder",
+  //       subtitle: "",
+  //       description: ""
+  //   };
 
     const pageEl = document.querySelector("#page");
     
@@ -135,7 +135,7 @@ $(document).ready(function() {
         subtitle: start,
         description: calEvent.description,
         image: calEvent.image
-    }))
+    }))}
     
     window.location.href = "events.html"
 
